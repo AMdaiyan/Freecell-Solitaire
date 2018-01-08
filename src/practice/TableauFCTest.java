@@ -10,13 +10,13 @@ public class TableauFCTest {
 	public void Initially6or7CardsTest() {
 		
 		
-		Cards card1 = new Cards(0, 0, "Black");
-		Cards card2 = new Cards(0, 5, "Red");
-		Cards card3 = new Cards(1, 2, "Black");
-		Cards card4 = new Cards(3, 0, "Red");
-		Cards card5 = new Cards(3, 10,"Black");
-		Cards card6 = new Cards(2, 8, "Red");
-		Cards card7 = new Cards(2, 12,"Red");
+		Cards card1 = new Cards(0, 0);
+		Cards card2 = new Cards(0, 5);
+		Cards card3 = new Cards(1, 2);
+		Cards card4 = new Cards(3, 0);
+		Cards card5 = new Cards(3, 10);
+		Cards card6 = new Cards(2, 8);
+		Cards card7 = new Cards(2, 12);
 		
 		//If there are 7 cards
 	    TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
@@ -43,18 +43,18 @@ public class TableauFCTest {
 	@Test
 	public void AddingCardIllegalOrLegalTest(){
 		
-		Cards card1 = new Cards(0, 3, "Black");
-		Cards card2 = new Cards(0, 5, "Red");
-		Cards card3 = new Cards(1, 2, "Black");
-		Cards card4 = new Cards(3, 0, "Red");
-		Cards card5 = new Cards(3, 10,"Black");
-		Cards card6 = new Cards(2, 8, "Red");
-		Cards card7 = new Cards(2, 12,"Red");
+		Cards card1 = new Cards(0, 3);
+		Cards card2 = new Cards(0, 5);
+		Cards card3 = new Cards(1, 2);
+		Cards card4 = new Cards(3, 0);
+		Cards card5 = new Cards(3, 10);
+		Cards card6 = new Cards(2, 8);
+		Cards card7 = new Cards(2, 12);
 		
-		Cards addcard1 = new Cards(1, 2, "Red");
-		Cards addcard2 = new Cards(2, 2, "Black");
-		Cards addcard3 = new Cards(3, 4, "Red");
-		Cards addcard4 = new Cards(4, 4, "Black");
+		Cards addcard1 = new Cards(1, 2);
+		Cards addcard2 = new Cards(2, 2);
+		Cards addcard3 = new Cards(3, 4);
+		Cards addcard4 = new Cards(4, 4);
 		
 		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
 		ArrayList<Cards> list = tp1.getTableauFC();
@@ -85,13 +85,13 @@ public class TableauFCTest {
 	@Test
 	public void RemovingCardIllegalOrNot(){
 		
-		Cards card1 = new Cards(0, 3, "Black");
-		Cards card2 = new Cards(0, 5, "Red");
-		Cards card3 = new Cards(1, 2, "Black");
-		Cards card4 = new Cards(3, 0, "Red");
-		Cards card5 = new Cards(3, 10,"Black");
-		Cards card6 = new Cards(2, 8, "Red");
-		Cards card7 = new Cards(2, 12,"Red");
+		Cards card1 = new Cards(0, 3);
+		Cards card2 = new Cards(0, 5);
+		Cards card3 = new Cards(1, 2);
+		Cards card4 = new Cards(3, 0);
+		Cards card5 = new Cards(3, 10);
+		Cards card6 = new Cards(2, 8);
+		Cards card7 = new Cards(2, 12);
 		
 		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
 		ArrayList<Cards> list = tp1.getTableauFC();
@@ -104,18 +104,18 @@ public class TableauFCTest {
 	@Test
 	public void AddedCardIsOnTopTest(){
 		
-		Cards card1 = new Cards(0, 3, "Black");
-		Cards card2 = new Cards(0, 5, "Red");
-		Cards card3 = new Cards(1, 2, "Black");
-		Cards card4 = new Cards(3, 0, "Red");
-		Cards card5 = new Cards(3, 10,"Black");
-		Cards card6 = new Cards(2, 8, "Red");
-		Cards card7 = new Cards(2, 12,"Red");
+		Cards card1 = new Cards(0, 3);
+		Cards card2 = new Cards(0, 5);
+		Cards card3 = new Cards(1, 2);
+		Cards card4 = new Cards(3, 0);
+		Cards card5 = new Cards(3, 10);
+		Cards card6 = new Cards(2, 8);
+		Cards card7 = new Cards(2, 12);
 		
-		Cards addcard1 = new Cards(1, 2, "Red");
-		Cards addcard2 = new Cards(2, 2, "Black");
-		Cards addcard3 = new Cards(3, 4, "Red");
-		Cards addcard4 = new Cards(4, 4, "Black");
+		Cards addcard1 = new Cards(1, 2);
+		Cards addcard2 = new Cards(2, 2);
+		Cards addcard3 = new Cards(3, 4);
+		Cards addcard4 = new Cards(4, 4);
 
 		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
 		ArrayList<Cards> list = tp1.getTableauFC();
@@ -132,13 +132,13 @@ public class TableauFCTest {
 	@Test
 	public void CardUnderRemovedCardisTopCardTest(){
 		
-		Cards card1 = new Cards(0, 3, "Black");
-		Cards card2 = new Cards(0, 5, "Red");
-		Cards card3 = new Cards(1, 2, "Black");
-		Cards card4 = new Cards(3, 0, "Red");
-		Cards card5 = new Cards(3, 10,"Black");
-		Cards card6 = new Cards(2, 8, "Red");
-		Cards card7 = new Cards(2, 12,"Red");
+		Cards card1 = new Cards(0, 3);
+		Cards card2 = new Cards(0, 5);
+		Cards card3 = new Cards(1, 2);
+		Cards card4 = new Cards(3, 0);
+		Cards card5 = new Cards(3, 10);
+		Cards card6 = new Cards(2, 8);
+		Cards card7 = new Cards(2, 12);
 		
 		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
 		ArrayList<Cards> list = tp1.getTableauFC();
