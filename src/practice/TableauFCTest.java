@@ -2,6 +2,8 @@ package practice;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 public class TableauFCTest {
@@ -31,13 +33,13 @@ public class TableauFCTest {
 		
 		//If there are 6 cards
 		TableauFC tp2 = new TableauFC(card1, card2, card3, card4, card5, card6);
-		ArrayList<Cards> list = tp2.getTableauFC();
-		assertNotNull(list.get(0));
-		assertNotNull(list.get(1));
-		assertNotNull(list.get(2));
-		assertNotNull(list.get(3));
-		assertNotNull(list.get(4));
-		assertNotNull(list.get(5));
+		ArrayList<Cards> list1 = tp2.getTableauFC();
+		assertNotNull(list1.get(0));
+		assertNotNull(list1.get(1));
+		assertNotNull(list1.get(2));
+		assertNotNull(list1.get(3));
+		assertNotNull(list1.get(4));
+		assertNotNull(list1.get(5));
 		}
 	
 	@Test
