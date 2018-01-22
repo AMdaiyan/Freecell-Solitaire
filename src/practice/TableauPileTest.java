@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-public class TableauFCTest {
+public class TableauPileTest {
 
 	@Test
 	public void Initially6or7CardsTest() {
@@ -21,8 +21,8 @@ public class TableauFCTest {
 		Cards card7 = new Cards(2, 12);
 		
 		//If there are 7 cards
-	    TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
-		ArrayList<Cards> list = tp1.getTableauFC();
+	    TableauPile tp1 = new TableauPile(card1, card2, card3, card4, card5, card6, card7);
+		ArrayList<Cards> list = tp1.getTableauPile();
 		assertNotNull(list.get(0));
 		assertNotNull(list.get(1));
 		assertNotNull(list.get(2));
@@ -32,8 +32,8 @@ public class TableauFCTest {
 		assertNotNull(list.get(6));
 		
 		//If there are 6 cards
-		TableauFC tp2 = new TableauFC(card1, card2, card3, card4, card5, card6);
-		ArrayList<Cards> list1 = tp2.getTableauFC();
+		TableauPile tp2 = new TableauPile(card1, card2, card3, card4, card5, card6);
+		ArrayList<Cards> list1 = tp2.getTableauPile();
 		assertNotNull(list1.get(0));
 		assertNotNull(list1.get(1));
 		assertNotNull(list1.get(2));
@@ -58,16 +58,16 @@ public class TableauFCTest {
 		Cards addcard3 = new Cards(3, 4);
 		Cards addcard4 = new Cards(4, 4);
 		
-		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
-		ArrayList<Cards> list = tp1.getTableauFC();
+		TableauPile tp1 = new TableauPile(card1, card2, card3, card4, card5, card6, card7);
+		ArrayList<Cards> list = tp1.getTableauPile();
 		
 		assertTrue("Rank is lower and color is different",list.addcard(addcard1));
 		assertFalse("Rank is lower but color is same",list.addcard(addcard2));
 		assertFalse("Rank is higher and color is different",list.addcard(addcard3));
 		assertFalse("Rank is higher and color is same",list.addcard(addcard4));	
 		
-		TableauFC tp2 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
-		ArrayList<Cards> list = tp2.getTableauFC();
+		TableauPile tp2 = new TableauPile(card1, card2, card3, card4, card5, card6, card7);
+		ArrayList<Cards> list = tp2.getTableauPile();
 		
 		list.removeTopCard();
 		list.removeTopCard();
@@ -95,8 +95,8 @@ public class TableauFCTest {
 		Cards card6 = new Cards(2, 8);
 		Cards card7 = new Cards(2, 12);
 		
-		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
-		ArrayList<Cards> list = tp1.getTableauFC();
+		TableauPile tp1 = new TableauPile(card1, card2, card3, card4, card5, card6, card7);
+		ArrayList<Cards> list = tp1.getTableauPile();
 		
 		assertTrue(list.removeTopCard());
 		assertFalse("can't remove if there are no cards", list.isEmpty());
@@ -119,8 +119,8 @@ public class TableauFCTest {
 		Cards addcard3 = new Cards(3, 4);
 		Cards addcard4 = new Cards(4, 4);
 
-		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
-		ArrayList<Cards> list = tp1.getTableauFC();
+		TableauPile tp1 = new TableauPile(card1, card2, card3, card4, card5, card6, card7);
+		ArrayList<Cards> list = tp1.getTableauPile();
 		
 		list.addcard(addcard1);
 		list.addcard(addcard2);
@@ -142,8 +142,8 @@ public class TableauFCTest {
 		Cards card6 = new Cards(2, 8);
 		Cards card7 = new Cards(2, 12);
 		
-		TableauFC tp1 = new TableauFC(card1, card2, card3, card4, card5, card6, card7);
-		ArrayList<Cards> list = tp1.getTableauFC();
+		TableauPile tp1 = new TableauPile(card1, card2, card3, card4, card5, card6, card7);
+		ArrayList<Cards> list = tp1.getTableauPile();
 		
 		list.removeTopCard();
 		
